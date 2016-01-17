@@ -1,9 +1,8 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
   <head>
     <title>用户列表</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=gb2312"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
     <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
@@ -66,9 +65,7 @@
       </div>
 	  
 	<div id="u3" class="ax_table">
-		
-			$("#myID").load("php/userlist.php");
-	
+		<iframe src="php/userlist.php"></iframe>
 	</div>
 	
       <!-- Unnamed (Shape) -->
