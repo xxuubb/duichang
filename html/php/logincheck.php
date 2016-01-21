@@ -1,5 +1,5 @@
-<?php
-//ÑéÖ¤µÇÂ½ĞÅÏ¢
+ï»¿<?php
+//éªŒè¯ç™»é™†ä¿¡æ¯
 session_start();
 include_once 'conn.php';
 //if($_POST['submit']){
@@ -12,17 +12,17 @@ include_once 'conn.php';
 		if ($row['username']==$username){
 			if ($row['userpass']==$userpass){
 				$_SESSION['username']=$username;
-				echo "<script language='javascript'>alert('µÇÂ½³É¹¦£¡');location='../Ê×Ò³.html';</script>";
+				echo "<script language='javascript'>alert('ç™»é™†æˆåŠŸï¼');location='../é¦–é¡µ.html';</script>";
 				break;
 			}
 			else {
-				echo "<script language='javascript'>alert('ÃÜÂë´íÎó£¡');location='../µÇÂ¼.html';</script>";
+				echo "<script language='javascript'>alert('å¯†ç é”™è¯¯ï¼');location='../ç™»å½•.html';</script>";
 				break;
 			}
 		}
 	};
 	if($row==false){
-		echo "<script language='javascript'>alert('ÓÃ»§Ãû²»´æÔÚ£¡');location='../µÇÂ¼.html';</script>";
+		echo "<script language='javascript'>alert('ç”¨æˆ·åä¸å­˜åœ¨ï¼');location='../ç™»å½•.html';</script>";
 	}else 
 	mysql_close($conn);
 //}

@@ -1,5 +1,5 @@
-<?php
-//��֤��½��Ϣ
+﻿<?php
+//验证登陆信息
 session_start();
 include_once 'conn.php';
 //if($_POST['submit']){
@@ -16,9 +16,9 @@ include_once 'conn.php';
 	$sql="insert into customer (customer_name, customer_phone, customer_email, customer_company, customer_address, customer_other, customer_type) values('$customer_name','$customer_phone','$customer_email','$customer_company','$customer_address','$customer_other','$customer_type')";
 	$query=mysql_query($sql);	
 	if ($query==false){		
-		echo "<script language='javascript'>alert('��ͬ�ͻ��Ѿ����ڣ�����ʧ�ܣ�');location='../���ӿͻ�.html';</script>";		
+		echo "<script language='javascript'>alert('相同客户已经存在，插入失败！');location='../添加客户.html';</script>";		
 	} else {
-		echo "<script language='javascript'>location='../�ͻ��б�.html';</script>";
+		echo "<script language='javascript'>location='../客户列表.html';</script>";
 	}
 	mysql_close($conn);
 //}

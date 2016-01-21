@@ -1,5 +1,5 @@
-<?php
-//ÑéÖ¤µÇÂ½ĞÅÏ¢
+ï»¿<?php
+//éªŒè¯ç™»é™†ä¿¡æ¯
 session_start();
 include_once 'conn.php';
 //if($_POST['submit']){
@@ -14,9 +14,9 @@ include_once 'conn.php';
 	$sql="insert into user (username,userpass,realname,phone,dc_right) values('$username','$userpass','$realname','$phone','$dc_right')";
 	$query=mysql_query($sql);	
 	if ($query==false){		
-		echo "<script language='javascript'>alert('²åÈëÊ§°Ü£¡');location='../Ìí¼ÓÓÃ»§.html';</script>";		
+		echo "<script language='javascript'>alert('æ’å…¥å¤±è´¥ï¼');location='../æ·»åŠ ç”¨æˆ·.html';</script>";		
 	} else {
-		echo "<script language='javascript'>location='../ÓÃ»§ÁĞ±í.html';</script>";
+		echo "<script language='javascript'>location='../ç”¨æˆ·åˆ—è¡¨.html';</script>";
 	}
 	mysql_close($conn);
 //}

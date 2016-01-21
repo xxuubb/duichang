@@ -1,11 +1,10 @@
-<?php
-//Êý¾Ý¿âÁ´½ÓÎÄ¼þ
-$host='localhost';//Êý¾Ý¿â·þÎñÆ÷
-$user='root';//Êý¾Ý¿âÓÃ»§Ãû
-$password='1234';//Êý¾Ý¿âÃÜÂë
-$database='duichang';//Êý¾Ý¿âÃû
-$conn=@mysql_connect($host,$user,$password) or die('Êý¾Ý¿âÁ¬½ÓÊ§°Ü£¡');
-@mysql_select_db($database) or die('Ã»ÓÐÕÒµ½Êý¾Ý¿â£¡');
-mysql_query("set realname 'gb2312'");
-mysql_query("set dc_right 'gb2312'");
+ï»¿<?php
+//æ•°æ®åº“é“¾æŽ¥æ–‡ä»¶
+$host='localhost';//æ•°æ®åº“æœåŠ¡å™¨
+$user='root';//æ•°æ®åº“ç”¨æˆ·å
+$password='1234';//æ•°æ®åº“å¯†ç 
+$database='duichang';//æ•°æ®åº“å
+$conn=@mysql_connect($host,$user,$password) or die('æ•°æ®åº“è¿žæŽ¥å¤±è´¥ï¼');
+@mysql_select_db($database) or die('æ²¡æœ‰æ‰¾åˆ°æ•°æ®åº“ï¼');
+mysql_query("set names 'utf8'");
 ?>

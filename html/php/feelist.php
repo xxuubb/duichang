@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	include_once 'conn.php';
 	header("Content-Type:text/html;   charset=utf-8"); 
 	$sql="select * from fee";

@@ -1,6 +1,6 @@
-<?php
-//ע����¼
+﻿<?php
+//注销登录
 session_start();
 $_SESSION['username']="";
-echo "<script language='javascript'>alert('ע����¼�ɹ���');location='login.php';</script>";
+echo "<script language='javascript'>alert('注销登录成功！');location='login.php';</script>";
 ?>
