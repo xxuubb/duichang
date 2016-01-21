@@ -47,6 +47,7 @@
     </script>
   </head>
   <body>
+  <form id="customeraddform" name="customeraddform" method="post" action="php/addcustomer.php">
     <div id="base" class="">
 
       <!-- Unnamed (Shape) -->
@@ -134,7 +135,7 @@
 
       <!-- Unnamed (Text Field) -->
       <div id="u18" class="ax_text_field">
-        <input id="u18_input" type="text" value=""/>
+        <input id="customer_name"  name="customer_name" type="text" value=""/>
       </div>
 
       <!-- Unnamed (Shape) -->
@@ -148,7 +149,7 @@
 
       <!-- Unnamed (Text Field) -->
       <div id="u21" class="ax_text_field">
-        <input id="u21_input" type="text" value=""/>
+        <input  id="customer_phone"  name="customer_phone" type="text" value=""/>
       </div>
 
       <!-- Unnamed (Shape) -->
@@ -162,7 +163,7 @@
 
       <!-- Unnamed (Text Field) -->
       <div id="u24" class="ax_text_field">
-        <input id="u24_input" type="text" value=""/>
+        <input id="customer_email"  name="customer_email" type="text" value=""/>
       </div>
 
       <!-- Unnamed (Shape) -->
@@ -176,7 +177,7 @@
 
       <!-- Unnamed (Text Field) -->
       <div id="u27" class="ax_text_field">
-        <input id="u27_input" type="text" value=""/>
+        <input id="customer_company"  name="customer_company" type="text" value=""/>
       </div>
 
       <!-- Unnamed (Shape) -->
@@ -190,7 +191,7 @@
 
       <!-- Unnamed (Text Field) -->
       <div id="u30" class="ax_text_field">
-        <input id="u30_input" type="text" value=""/>
+        <input id="customer_address"  name="customer_address" type="text" value=""/>
       </div>
 
       <!-- Unnamed (Shape) -->
@@ -204,7 +205,7 @@
 
       <!-- Unnamed (Droplist) -->
       <div id="u33" class="ax_droplist">
-        <select id="u33_input">
+        <select id="customer_type"  name="customer_type">
           <option value="委托方">委托方</option>
           <option value="营运人">营运人</option>
         </select>
@@ -247,7 +248,7 @@
         <img id="u41_img" class="img " src="images/首页/u0.png"/>
         <!-- Unnamed () -->
         <div id="u42" class="text">
-          <p><span>场地</span><span>管理</span></p>
+          <p><span>费用</span><span>管理</span></p>
         </div>
       </div>
 
@@ -280,7 +281,7 @@
 
       <!-- Unnamed (Shape) -->
       <div id="u49" class="ax_shape">
-        <img id="u49_img" class="img " src="images/添加场地/u46.png"/>
+        <img id="u49_img" class="img " src="images/添加客户/u49.png"/>
         <!-- Unnamed () -->
         <div id="u50" class="text">
           <p><span>其它</span><span>：</span></p>
@@ -289,8 +290,9 @@
 
       <!-- Unnamed (Text Field) -->
       <div id="u51" class="ax_text_field">
-        <input id="u51_input" type="text" value=""/>
+        <input id="customer_other"  name="customer_other" type="text" value=""/>
       </div>
     </div>
+	</form>
   </body>
 </html>

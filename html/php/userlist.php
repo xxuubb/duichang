@@ -1,23 +1,25 @@
 <?php
 	include_once 'conn.php';
+	header("Content-Type:text/html;   charset=utf-8"); 
 	$sql="select * from user";
 	$result=mysql_query($sql);
-	echo "<table width=800 height=70 border=1 cellspacing=1> "; 
-	echo "<th width=150 scope=col>ÓÃ»§Ãû</th> ";
-	echo "<th width=100 scope=col>ĞÕÃû</th> ";
-	echo "<th width=100 scope=col>µç»°</th>";
-	echo "<th width=100 scope=col>²Ù×÷</th>";
+	echo "<table width=700 height=70 border=1 cellspacing=1> "; 
+	echo "<th width=50 scope=col align=center>ç”¨æˆ·å</th> ";
+	echo "<th width=100 scope=col align=center>å§“å</th> ";
+	echo "<th width=100 scope=col align=center>ç”µè¯</th>";
+	echo "<th width=100 scope=col align=center>æƒé™</th>";
+	echo "<th width=100 scope=col align=center>æ“ä½œ</th>";
 	echo "</tr>";	
 	$datanum=mysql_num_rows($result);
 
-	echo "µ±Ç°ÓĞ".$datanum."¸öÈËÂ¼Èë×ÊÁÏ<br>";
 	for($i=1;$i<=$datanum;$i++)
 	{
 		$info=mysql_fetch_array($result,MYSQL_ASSOC );
-		echo "<tr><td>".$info['username']."</td>";
-		echo "<td>".$info['realname']."</td>";
-		echo "<td>".$info['phone']."</td>";
-		echo "<td><a href='del.php?id=".$info['id']."'>É¾³ı</a></td>";
+		echo "<tr><td align=center>".$info['username']."</td>";
+		echo "<td align=center>".$info['realname']."</td>";
+		echo "<td align=center>".$info['phone']."</td>";
+		echo "<td align=center>".$info['dc_right']."</td>";
+		echo "<td align=center><a href='../æ·»åŠ ç”¨æˆ·.html'>ç¼–è¾‘</a></td>";
 	}
 	echo "</table>";
 	mysql_close($conn);
