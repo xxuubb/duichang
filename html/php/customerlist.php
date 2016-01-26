@@ -25,7 +25,7 @@
 		echo "<td align=center>".$info['customer_address']."</td>";
 		echo "<td align=center>".$info['customer_other']."</td>";
 		echo "<td align=center>".$info['customer_type']."</td>";
-		echo "<td align=center><a href='../添加客户.html'>编辑</a></td>";
+		echo "<td align=center><a href=''>编辑</a></td>";
 	}
 	echo "</table>";
 	mysql_close($conn);

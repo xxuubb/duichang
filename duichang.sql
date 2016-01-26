@@ -42,6 +42,57 @@ INSERT INTO `box` VALUES ('jw00022','25 X 25','450KG','大师傅');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `business`
+--
+
+DROP TABLE IF EXISTS `business`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `business` (
+  `id` int(16) NOT NULL AUTO_INCREMENT,
+  `bu_num` varchar(64) NOT NULL,
+  `bu_box_num` varchar(32) NOT NULL,
+  `bu_ruku_time` varchar(32) DEFAULT NULL,
+  `bu_ruku_customer` varchar(32) DEFAULT NULL,
+  `bu_ruku_add` varchar(256) DEFAULT NULL,
+  `bu_ruku_status` varchar(32) DEFAULT NULL,
+  `bu_ruku_type` varchar(32) DEFAULT NULL,
+  `bu_ruku_cost` float(32,2) DEFAULT NULL,
+  `bu_jc_time` varchar(32) DEFAULT NULL,
+  `bu_jc_customer` varchar(32) DEFAULT NULL,
+  `bu_jc_add` varchar(256) DEFAULT NULL,
+  `bu_jc_status` varchar(32) DEFAULT NULL,
+  `bu_jc_type` varchar(32) DEFAULT NULL,
+  `bu_jc_fixcost` float(32,2) DEFAULT NULL,
+  `bu_jc_costrate` float(32,2) DEFAULT NULL,
+  `bu_cc_time` varchar(32) DEFAULT NULL,
+  `bu_cc_customer` varchar(32) DEFAULT NULL,
+  `bu_cc_add` varchar(256) DEFAULT NULL,
+  `bu_cc_status` varchar(32) DEFAULT NULL,
+  `bu_cc_type` varchar(32) DEFAULT NULL,
+  `bu_cc_fixcost` float(32,2) DEFAULT NULL,
+  `bu_cc_costrate` float(32,2) DEFAULT NULL,
+  `bu_ck_time` varchar(32) DEFAULT NULL,
+  `bu_ck_customer` varchar(32) DEFAULT NULL,
+  `bu_ck_add` varchar(256) DEFAULT NULL,
+  `bu_ck_status` varchar(32) DEFAULT NULL,
+  `bu_ck_type` varchar(32) DEFAULT NULL,
+  `bu_ck_cost` float(32,2) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `business`
+--
+
+LOCK TABLES `business` WRITE;
+/*!40000 ALTER TABLE `business` DISABLE KEYS */;
+INSERT INTO `business` VALUES (1,'160125023433','','','','','','',0.00,'16-01-25 02:46:09','徐兵','大放大','未进场','售出',1.10,21.00,'16-01-25 02:49:00','徐兵','','未出场','售出',0.00,0.00,'16-01-25 03:12:19','徐兵','是打发点','未出库','售出',23.00),(2,'SHTJ160125024335','jw00022','16-01-25 10:43:18','徐兵1','','','售出',101.00,'','','','','',0.00,0.00,'16-01-25 02:49:05','徐兵','的撒','未出场','售出',11.00,222.00,NULL,NULL,NULL,NULL,NULL,NULL),(3,'SHTJ160125024402','','','','','','',0.00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'SHTJ160125024419','','','','','','',0.00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(5,'SHTJ160125024420','','','','','','',0.00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(6,'SHTJ160125024421','','','','','','',0.00,'16-01-25 02:24:35','徐兵1','打发','正在进场','翻新',22.00,22.00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(7,'SHTJ160125024422','','','','','','',0.00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(8,'SHTJ160125024816','','','','','','',0.00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(9,'SHTJ160125025013','jw00022','16-01-25 10:49:56','徐兵','的说法是撒旦法','未入库','售出',20.00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(10,'SHTJ160125025148','jw00022','16-01-25 10:51:44','徐兵','','未入库','售出',0.00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(11,'SHTJ160125025250','jw00022','16-01-25 10:51:50','徐兵','到事发地是范德萨发的','未入库','售出',13.44,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `business` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `customer`
 --
 
@@ -66,7 +117,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES ('徐兵',123,'123@13','','','','委托方'),('徐兵1',123,'123@13','上海聚玩是大法师发发呆时','上海延长路多发发大厦是东方','是大法师','营运人');
+INSERT INTO `customer` VALUES ('徐兵',123,'123@13','','sdfsda','','委托方'),('徐兵1',123,'123@13','上海聚玩是大法师发发呆时','上海延长路多发发大厦是东方','是大法师','营运人');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,7 +161,7 @@ CREATE TABLE `user` (
   `phone` int(16) DEFAULT NULL,
   `dc_right` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=gb2312;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -132,4 +183,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-01-22 11:11:59
+-- Dump completed on 2016-01-25 15:20:03

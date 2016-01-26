@@ -17,7 +17,7 @@
 		echo "<tr><td align=center>".$info['fee_num']."</td>";
 		echo "<td align=center>".$info['fee_name']."</td>";
 		echo "<td align=center>".$info['fee_ex']."</td>";
-		echo "<td align=center><a href='../添加客户.html'>编辑</a></td>";
+		echo "<td align=center><a href=''>编辑</a></td>";
 	}
 	echo "</table>";
 	mysql_close($conn);

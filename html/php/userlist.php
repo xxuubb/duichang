@@ -19,7 +19,7 @@
 		echo "<td align=center>".$info['realname']."</td>";
 		echo "<td align=center>".$info['phone']."</td>";
 		echo "<td align=center>".$info['dc_right']."</td>";
-		echo "<td align=center><a href='../添加用户.html'>编辑</a></td>";
+		echo "<td align=center><a href=''>编辑</a></td>";
 	}
 	echo "</table>";
 	mysql_close($conn);
