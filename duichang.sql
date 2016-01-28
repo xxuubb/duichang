@@ -153,7 +153,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user` (
+CREATE TABLE `dc_user` (
   `id` int(4) NOT NULL AUTO_INCREMENT,
   `username` varchar(16) NOT NULL,
   `userpass` varchar(32) NOT NULL,
