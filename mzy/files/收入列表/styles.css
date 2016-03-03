@@ -124,16 +124,16 @@
 }
 #u8 {
   position:absolute;
-  left:10px;
-  top:150px;
-  width:305px;
+  left:0px;
+  top:130px;
+  width:325px;
   height:95px;
 }
 #u9 {
   position:absolute;
   left:0px;
   top:0px;
-  width:100px;
+  width:107px;
   height:30px;
   text-align:center;
 }
@@ -141,21 +141,21 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:108px;
   height:31px;
 }
 #u10 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:103px;
   word-wrap:break-word;
 }
 #u11 {
   position:absolute;
-  left:100px;
+  left:107px;
   top:0px;
-  width:100px;
+  width:107px;
   height:30px;
   text-align:center;
 }
@@ -163,21 +163,21 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:108px;
   height:31px;
 }
 #u12 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:103px;
   word-wrap:break-word;
 }
 #u13 {
   position:absolute;
-  left:200px;
+  left:214px;
   top:0px;
-  width:100px;
+  width:106px;
   height:30px;
   text-align:center;
 }
@@ -185,21 +185,21 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:107px;
   height:31px;
 }
 #u14 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:102px;
   word-wrap:break-word;
 }
 #u15 {
   position:absolute;
   left:0px;
   top:30px;
-  width:100px;
+  width:107px;
   height:30px;
   text-align:center;
 }
@@ -207,22 +207,22 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:108px;
   height:31px;
 }
 #u16 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:103px;
   visibility:hidden;
   word-wrap:break-word;
 }
 #u17 {
   position:absolute;
-  left:100px;
+  left:107px;
   top:30px;
-  width:100px;
+  width:107px;
   height:30px;
   text-align:center;
 }
@@ -230,22 +230,22 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:108px;
   height:31px;
 }
 #u18 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:103px;
   visibility:hidden;
   word-wrap:break-word;
 }
 #u19 {
   position:absolute;
-  left:200px;
+  left:214px;
   top:30px;
-  width:100px;
+  width:106px;
   height:30px;
   text-align:center;
 }
@@ -253,14 +253,14 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:107px;
   height:31px;
 }
 #u20 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:102px;
   visibility:hidden;
   word-wrap:break-word;
 }
@@ -268,7 +268,7 @@
   position:absolute;
   left:0px;
   top:60px;
-  width:100px;
+  width:107px;
   height:30px;
   text-align:center;
 }
@@ -276,22 +276,22 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:108px;
   height:31px;
 }
 #u22 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:103px;
   visibility:hidden;
   word-wrap:break-word;
 }
 #u23 {
   position:absolute;
-  left:100px;
+  left:107px;
   top:60px;
-  width:100px;
+  width:107px;
   height:30px;
   text-align:center;
 }
@@ -299,22 +299,22 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:108px;
   height:31px;
 }
 #u24 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:103px;
   visibility:hidden;
   word-wrap:break-word;
 }
 #u25 {
   position:absolute;
-  left:200px;
+  left:214px;
   top:60px;
-  width:100px;
+  width:106px;
   height:30px;
   text-align:center;
 }
@@ -322,14 +322,60 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:101px;
+  width:107px;
   height:31px;
 }
 #u26 {
   position:absolute;
   left:2px;
   top:7px;
-  width:96px;
+  width:102px;
   visibility:hidden;
+  word-wrap:break-word;
+}
+#u27 {
+  position:absolute;
+  left:224px;
+  top:503px;
+  width:91px;
+  height:40px;
+}
+#u27_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:91px;
+  height:40px;
+  font-family:'华文楷体 Regular', '华文楷体';
+  font-weight:400;
+  font-style:normal;
+  font-size:18px;
+  text-decoration:none;
+  color:#000000;
+  text-align:center;
+}
+#u28 {
+  position:absolute;
+  left:110px;
+  top:420px;
+  width:210px;
+  height:50px;
+  font-family:'华文新魏 Regular', '华文新魏';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+}
+#u28_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:211px;
+  height:51px;
+}
+#u29 {
+  position:absolute;
+  left:2px;
+  top:14px;
+  width:206px;
   word-wrap:break-word;
 }

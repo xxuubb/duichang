@@ -4,6 +4,7 @@ session_start();
 include_once 'conn.php';
 //if($_POST['submit']){
 	$username=$_POST['username'];
+	$_SESSION["username"]=$username;
 	$userpass=$_POST['userpass'];
 	$userpass=md5($userpass);
 	$sql="select * from mzy_user";

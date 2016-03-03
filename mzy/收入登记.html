@@ -51,6 +51,7 @@
     </script>
   </head>
   <body>
+
     <div id="base" class="">
 
       <!-- Placeholder for App Content (Shape) -->
@@ -76,20 +77,21 @@
         <img id="u4_img" class="img " src="resources/images/transparent.gif"/>
         <!-- Unnamed () -->
         <div id="u5" class="text">
-          <p><span>欢迎</span><span>您，</span><span> 顾姐！</span></p>
+          <p><span>欢迎</span><span>您！</span></p>
         </div>
       </div>
 
       <!-- Unnamed (HTML Button) -->
       <div id="u6" class="ax_html_button">
-        <input id="u6_input" type="submit" value="收入登记"/>
+        <input id="u6_input" value="收入登记"/>
       </div>
 
       <!-- Unnamed (HTML Button) -->
       <div id="u7" class="ax_html_button">
-        <input id="u7_input" type="submit" value="回到首页"/>
+        <input id="u7_input" value="回到首页"/>
       </div>
-
+	  
+		<form id="loginform" name="loginform" method="post" action="php/addincome.php">
       <!-- Unnamed (Shape) -->
       <div id="u8" class="ax_shape">
         <img id="u8_img" class="img " src="resources/images/transparent.gif"/>
@@ -101,7 +103,7 @@
 
       <!-- Unnamed (Droplist) -->
       <div id="u10" class="ax_droplist">
-        <select id="u10_input">
+        <select id='income_type' name='income_type'>
           <option value="汗蒸养生">汗蒸养生</option>
           <option selected value="面部护理">面部护理</option>
           <option value="产品销售">产品销售</option>
@@ -119,7 +121,7 @@
 
       <!-- Unnamed (Text Field) -->
       <div id="u13" class="ax_text_field">
-        <input id="u13_input" type="text" value=""/>
+        <input id='income_money' name='income_money' type="text" value=""/>
       </div>
 
       <!-- Unnamed (Shape) -->
@@ -127,33 +129,21 @@
         <img id="u14_img" class="img " src="resources/images/transparent.gif"/>
         <!-- Unnamed () -->
         <div id="u15" class="text">
-          <p><span>时&nbsp; &nbsp; &nbsp; &nbsp; 间</span><span>：</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Text Field) -->
-      <div id="u16" class="ax_text_field">
-        <input id="u16_input" type="text" value=""/>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u17" class="ax_shape">
-        <img id="u17_img" class="img " src="resources/images/transparent.gif"/>
-        <!-- Unnamed () -->
-        <div id="u18" class="text">
           <p><span>备&nbsp; &nbsp; &nbsp; &nbsp; 注</span><span>：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Text Field) -->
-      <div id="u19" class="ax_text_field">
-        <input id="u19_input" type="text" value=""/>
+      <div id="u16" class="ax_text_field">
+        <input id='income_other' name='income_other' type="text" value=""/>
       </div>
 
       <!-- Unnamed (HTML Button) -->
-      <div id="u20" class="ax_html_button">
-        <input id="u20_input" type="submit" value="确&nbsp; 定"/>
+      <div id="u17" class="ax_html_button">
+        <input id="u17_input" type="submit" value="确&nbsp; 定"/>
       </div>
+	  </form>
     </div>
+
   </body>
 </html>
