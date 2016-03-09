@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : mysql
+Source Server         : localhost
 Source Server Version : 50520
 Source Host           : localhost:3306
 Source Database       : duichang
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2016-03-06 11:21:45
+Date: 2016-03-09 09:48:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -126,28 +126,29 @@ INSERT INTO `fee` VALUES ('1', '上车费', '上车');
 -- ----------------------------
 DROP TABLE IF EXISTS `mzy_customer`;
 CREATE TABLE `mzy_customer` (
-  `customer_phone` int(32) NOT NULL,
+  `customer_phone` varchar(32) NOT NULL DEFAULT '0',
   `customer_name` varchar(32) DEFAULT NULL,
   `customer_reg_time` varchar(32) DEFAULT NULL,
   `customer_address` varchar(256) DEFAULT NULL,
-  `customer_hanzheng_total_times` int(32) unsigned zerofill DEFAULT NULL,
-  `customer_hanzheng_used_times` int(32) unsigned zerofill DEFAULT NULL,
-  `customer_chongzhi_total` int(32) unsigned zerofill DEFAULT NULL,
-  `customer_chongzhi_used` int(32) unsigned zerofill DEFAULT NULL,
-  `customer_vip_type` int(32) unsigned zerofill DEFAULT NULL,
-  `customer_score` int(32) unsigned zerofill DEFAULT NULL,
+  `customer_hanzheng_total_times` int(32) DEFAULT '0',
+  `customer_hanzheng_used_times` int(32) DEFAULT '0',
+  `customer_chongzhi_total` int(32) DEFAULT '0',
+  `customer_chongzhi_used` int(32) DEFAULT '0',
+  `customer_vip_type` int(32) DEFAULT '0',
+  `customer_score` int(32) DEFAULT '0',
   `customer_weixin` varchar(32) DEFAULT NULL,
-  `customer_qq` int(32) DEFAULT NULL,
+  `customer_qq` int(32) DEFAULT '0',
   `customer_email` varchar(32) DEFAULT NULL,
   `customer_other` varchar(256) DEFAULT NULL,
   `customer_user` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`customer_phone`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of mzy_customer
 -- ----------------------------
-INSERT INTO `mzy_customer` VALUES ('2147483647', '??', '2016-03-06 11:20:42', '', '00000000000000000000000000000015', null, null, null, '00000000000000000000000000000001', '00000000000000000000000000000300', '', '0', null, '', '??');
+INSERT INTO `mzy_customer` VALUES ('13382797169', '徐兵', '2016-03-07 13:16:08', '上海延长路', '48', '5', '1000', '100', '1', '6800', 'xubing676', '11', null, '', '顾姐');
+INSERT INTO `mzy_customer` VALUES ('13382798173', '季艳', '2016-03-07 15:05:54', '1', '33', '2', '5000', '11', '1', '5500', '11', '11', null, '', '顾姐');
 
 -- ----------------------------
 -- Table structure for `mzy_customer_recorder`
@@ -155,17 +156,23 @@ INSERT INTO `mzy_customer` VALUES ('2147483647', '??', '2016-03-06 11:20:42', ''
 DROP TABLE IF EXISTS `mzy_customer_recorder`;
 CREATE TABLE `mzy_customer_recorder` (
   `customer_use_time` varchar(32) NOT NULL,
-  `customer_phone` int(32) DEFAULT NULL,
+  `customer_phone` varchar(32) DEFAULT NULL,
   `customer_name` varchar(32) NOT NULL,
-  `customer_hanzheng_used_times` int(32) DEFAULT NULL,
-  `customer_chongzhi_used` int(32) DEFAULT NULL,
+  `customer_hanzheng_used_times` int(32) DEFAULT '0',
+  `customer_chongzhi_used` int(32) DEFAULT '0',
   `customer_use_other` varchar(256) DEFAULT NULL,
+  `customer_user` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`customer_use_time`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of mzy_customer_recorder
 -- ----------------------------
+INSERT INTO `mzy_customer_recorder` VALUES ('2016-03-07 17:14:39', '13382797169', '徐兵', '2', '0', '', '顾姐');
+INSERT INTO `mzy_customer_recorder` VALUES ('2016-03-07 17:14:58', '13382798173', '季艳', '2', '0', '', '顾姐');
+INSERT INTO `mzy_customer_recorder` VALUES ('2016-03-07 17:43:31', '13382797169', '徐兵', '2', '0', '', '顾姐');
+INSERT INTO `mzy_customer_recorder` VALUES ('2016-03-07 17:43:49', '13382797169', '徐兵', '0', '100', '', '顾姐');
+INSERT INTO `mzy_customer_recorder` VALUES ('2016-03-07 17:44:21', '13382798173', '季艳', '0', '11', '', '顾姐');
 
 -- ----------------------------
 -- Table structure for `mzy_income`
@@ -296,17 +303,17 @@ CREATE TABLE `mzy_user` (
   `username` varchar(16) NOT NULL,
   `userpass` varchar(32) NOT NULL,
   `realname` varchar(16) NOT NULL,
-  `phone` int(16) DEFAULT NULL,
+  `phone` varchar(16) DEFAULT NULL,
   `dc_right` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gb2312;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=gb2312;
 
 -- ----------------------------
 -- Records of mzy_user
 -- ----------------------------
 INSERT INTO `mzy_user` VALUES ('1', '顾姐', 'd93591bdf7860e1e4ee2fca799911215', '', null, '');
 INSERT INTO `mzy_user` VALUES ('2', '孙姐', 'd93591bdf7860e1e4ee2fca799911215', '徐兵', '123', '管理员');
-INSERT INTO `mzy_user` VALUES ('3', '季艳', 'd93591bdf7860e1e4ee2fca799911215', '季艳', '123', '管理员');
+INSERT INTO `mzy_user` VALUES ('3', '季艳', 'b59c67bf196a4758191e42f76670ceba', '季艳', '123', '管理员');
 
 -- ----------------------------
 -- Table structure for `user`

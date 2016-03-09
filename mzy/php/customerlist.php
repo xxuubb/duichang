@@ -4,13 +4,13 @@
 	$sql="select * from mzy_customer";
 	$result=mysql_query($sql);
 	echo "<table width=290 border=1 cellspacing=1> "; 
-	echo "<th width=50 scope=col align=center>用户姓名</th> ";
+	echo "<th width=50 scope=col align=center>姓名</th> ";
 	echo "<th width=50 scope=col align=center>用户电话</th> ";
 	echo "<th width=50 scope=col align=center>开户时间</th> ";
 	echo "<th width=50 scope=col align=center>汗蒸卡</th>";
 	echo "<th width=50 scope=col align=center>充值卡</th>";
 	echo "<th width=50 scope=col align=center>积分</th>";
-	echo "<th width=50 scope=col align=center>登记人</th>";
+	echo "<th width=50 scope=col align=center>登记</th>";
 	echo "</tr>";	
 	$datanum=mysql_num_rows($result);
 	
