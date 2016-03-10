@@ -3,6 +3,8 @@
 	header("Content-Type:text/html;   charset=utf-8"); 
 	$sql="select * from mzy_income";
 	$result=mysql_query($sql);
+	echo "<body bgcolor='transparent'>";
+
 	echo "<table width=290 border=1 cellspacing=1> "; 
 	echo "<th width=50 scope=col align=center>时间</th> ";
 	echo "<th width=50 scope=col align=center>收入类型</th> ";
@@ -23,6 +25,7 @@
 		echo "<td align=center>".$info['income_user']."</td>";
 	}
 	echo "</table>";
-	echo "<p align=right> 本月收入总计：".$total_income." 元</p>";
+	echo "<p align=right> 收入总计：".$total_income." 元</p>";
+	echo "</body>"; 
 	mysql_close($conn);
 ?>

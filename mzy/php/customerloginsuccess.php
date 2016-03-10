@@ -17,11 +17,11 @@ include_once 'conn.php';
 			$customer_hanzheng_used_times=$row['customer_hanzheng_used_times'];
 			$customer_vip_type=$row['customer_vip_type'];
 			$customer_score=$row['customer_score'];
+			break;
 		}
-		break;
 	};
 	
-echo "<table width=290 height=70 border=0 cellspacing=1> ";
+echo "<table width=350 height=40 border=0 cellspacing=1> ";
 echo "<tr height=30><td width=100 align=left><p><span>客户名称</span><span>：          </span></p></td>";
 echo "<td width=100 align=left><p><span>$customer_name</span></p></td>";
 echo "</tr>";

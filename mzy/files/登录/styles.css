@@ -37,14 +37,14 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:320px;
+  width:400px;
   height:548px;
 }
 #u2_img {
   position:absolute;
   left:0px;
   top:0px;
-  width:320px;
+  width:400px;
   height:548px;
 }
 #u3 {
@@ -97,7 +97,7 @@
 }
 #u7 {
   position:absolute;
-  left:2px;
+  left:8px;
   top:16px;
   width:106px;
   word-wrap:break-word;

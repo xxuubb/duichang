@@ -3,7 +3,7 @@
 	include_once 'conn.php';
 	header("Content-Type:text/html;   charset=utf-8"); 
 	$customer_phone=$_SESSION["customer_phone"];
-	echo "<table width=290 border=1 cellspacing=1> "; 
+	echo "<table width=320 border=1 cellspacing=1> "; 
 	echo "<th width=50 scope=col align=center>时间</th> ";
 	echo "<th width=50 scope=col align=center>汗蒸卡使用</th> ";
 	echo "<th width=50 scope=col align=center>充值卡使用</th> ";
