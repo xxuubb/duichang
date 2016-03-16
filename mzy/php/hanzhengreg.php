@@ -29,6 +29,10 @@ echo "<option value='100次卡'>100次卡</option>";
 echo "</select></td>";
 echo "</tr>";
 
+echo "<tr height=40><td width=100 align=right><p><span>额外赠送</span><span>：          </span></p></td>";
+echo "<td width=80 align=center><input id='customer_zengsong' name='customer_zengsong' type='text' value=''/></td>";
+echo "</tr>";
+
 echo "<tr height=40><td width=100 align=right><p><span>用户微信</span><span>：          </span></p></td>";
 echo "<td width=80 align=center><input id='customer_weixin' name='customer_weixin' type='text' value=''/></td>";
 echo "</tr>";

@@ -14,6 +14,7 @@ include_once 'conn.php';
 	$customer_weixin=$_POST['customer_weixin'];
 	$customer_qq=$_POST['customer_qq'];
 	$customer_other=$_POST['customer_other'];
+	$customer_zengsong=$_POST['customer_zengsong'];
 	$customer_hanzheng_total_times=0;
 	$customer_is_old=0;
 	$customer_score=0;
@@ -32,7 +33,9 @@ include_once 'conn.php';
 		$customer_vip_type=2;
 		$customer_hanzheng_total_times=100;
 	}
-		
+	
+	if($customer_zengsong!="")
+		$customer_hanzheng_total_times= $customer_hanzheng_total_times + (int)$customer_zengsong;
 	
 	$sql="select * from mzy_customer";
 	$query=mysql_query($sql);

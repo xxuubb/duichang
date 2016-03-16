@@ -5,7 +5,7 @@
 	$result=mysql_query($sql);
 	echo "<body bgcolor='transparent'>";
 
-	echo "<table width=290 border=1 cellspacing=1> "; 
+	echo "<table width=310 border=1 cellspacing=1> "; 
 	echo "<th width=50 scope=col align=center>时间</th> ";
 	echo "<th width=50 scope=col align=center>收入类型</th> ";
 	echo "<th width=50 scope=col align=center>金额</th>";
