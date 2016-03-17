@@ -6,7 +6,7 @@ include_once 'conn.php';
 header("Content-Type:text/html;   charset=utf-8"); 
 
 echo "<form id='jinchangaddform' name='jinchangaddform' method='post' action='addchongzhireg.php'>";
-echo "<table width=260 height=70 border=0 cellspacing=1> ";
+echo "<table width=320 height=70 border=0 cellspacing=1> ";
 echo "<tr height=40><td width=100 align=right><p><span>用户姓名</span><span>：          </span></p></td>";
 echo "<td width=80 align=center><input id='customer_name' name='customer_name' type='text' value=''/></td>";
 echo "</tr>";

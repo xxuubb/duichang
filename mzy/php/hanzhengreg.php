@@ -6,7 +6,7 @@ include_once 'conn.php';
 header("Content-Type:text/html;   charset=utf-8"); 
 
 echo "<form id='jinchangaddform' name='jinchangaddform' method='post' action='addhanzhengreg.php'>";
-echo "<table width=260 height=70 border=0 cellspacing=1> ";
+echo "<table width=320 height=70 border=0 cellspacing=1> ";
 echo "<tr height=40><td width=100 align=right><p><span>用户姓名</span><span>：          </span></p></td>";
 echo "<td width=80 align=center><input id='customer_name' name='customer_name' type='text' value=''/></td>";
 echo "</tr>";
@@ -22,7 +22,7 @@ echo "<td width=80 align=center><input id='customer_reg_time' name='customer_reg
 echo "</tr>";
 
 echo "<tr height=40><td width=100 align=right><p><span>卡类型</span><span>：          </span></p></td>";
-echo "<td width=80 align=center><select style='WIDTH: 140px' id='customer_hanzheng_type' name='customer_hanzheng_type'>";
+echo "<td width=80 align=center><select style='WIDTH: 180px' id='customer_hanzheng_type' name='customer_hanzheng_type'>";
 echo "<option value='15次卡'>15次卡</option>";
 echo "<option value='33次卡'>33次卡</option>";
 echo "<option value='100次卡'>100次卡</option>";
@@ -49,7 +49,7 @@ echo "<tr height=40><td width=100 align=right><p><span>备注</span><span>：   
 echo "<td width=80 align=center><input id='customer_other' name='customer_other' type='text' value=''/>";
 echo "</tr>";
 
-echo "<tr height=60><td width=100 align=right></td>";
+echo "<tr height=40><td width=100 align=right></td>";
 echo "<td width=80 align=left><input type='submit' value='确定'/></td>";
 echo "</tr>";   
 echo "</form>";   

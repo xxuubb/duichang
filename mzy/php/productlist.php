@@ -3,7 +3,7 @@
 	header("Content-Type:text/html;   charset=utf-8"); 
 	$sql="select * from mzy_product";
 	$result=mysql_query($sql);
-	echo "<table width=280 border=1 cellspacing=1> "; 
+	echo "<table width=320 border=1 cellspacing=1> "; 
 	echo "<th width=50 scope=col align=center>产品名称</th> ";
 	echo "<th width=50 scope=col align=center>产品数量</th> ";
 	echo "<th width=50 scope=col align=center>价格</th>";

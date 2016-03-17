@@ -3,49 +3,66 @@
   background-image:none;
   position:static;
   left:auto;
+  width:1211px;
   margin-left:0;
   margin-right:0;
-  text-align:center;
+  text-align:left;
 }
 #base {
-  position:relative;
+  position:absolute;
   z-index:0;
 }
 #u0 {
-  position:relative;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1600px;
+  height:24px;
+  font-size:20px;
   text-align:center;
 }
 #u0_img {
-  position:relative;
-  text-align:center;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:316px;
+  height:24px;
 }
 #u1 {
-  position:relative;
-  text-align:center;
+  word-wrap:break-word;
 }
 #u2 {
-  position:relative;
-  text-align:center;
+
 }
 #u2_img {
-  position:relative;
-  text-align:center;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:160px;
+  height:50px;
 }
 #u3 {
-  position:relative;
-  text-align:center;
+  position:absolute;
+  left:2px;
+  top:17px;
+  width:156px;
+  word-wrap:break-word;
 }
 #u4 {
-  position:relative;
-  text-align:center;
 }
 #u4_img {
-  position:relative;
-  text-align:center;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:70px;
+  height:50px;
 }
 #u5 {
-  position:relative;
-  text-align:center;
+  position:absolute;
+  left:2px;
+  top:17px;
+  width:66px;
+  word-wrap:break-word;
 }
 #u6 {
   position:absolute;

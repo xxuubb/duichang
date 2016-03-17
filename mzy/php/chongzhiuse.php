@@ -9,8 +9,8 @@ $sql="select * from mzy_customer";
 $query=mysql_query($sql);
 
 echo "<form id='jinchangaddform' name='jinchangaddform' method='post' action='addchongzhiuse.php'>";
-echo "<table width=260 height=70 border=0 cellspacing=1> ";
-echo "<tr height=40><td width=100 align=right><p><span>用户姓名</span><span>：          </span></p></td>";
+echo "<table width=320 height=70 border=0 cellspacing=1> ";
+echo "<tr height=60><td width=100 align=right><p><span>用户姓名</span><span>：          </span></p></td>";
 echo "<td width=80 align=center><select style='WIDTH: 140px' id='customer_name' name='customer_name'>";
 while($row=mysql_fetch_array($query)){
 	echo "<option value=".$row['customer_name'].">".$row['customer_name']."</option>";
@@ -18,11 +18,11 @@ while($row=mysql_fetch_array($query)){
 echo "</select></td>";
 echo "</tr>";
 
-echo "<tr height=40><td width=100 align=right><p><span>使用金额</span><span>：          </span></p></td>";
+echo "<tr height=60><td width=100 align=right><p><span>使用金额</span><span>：          </span></p></td>";
 echo "<td width=80 align=center><input id='customer_chongzhi_used' name='customer_chongzhi_used' type='text' value=''/></td>";
 echo "</tr>";
 
-echo "<tr height=40><td width=100 align=right><p><span>备注</span><span>：          </span></p></td>";
+echo "<tr height=60><td width=100 align=right><p><span>备注</span><span>：          </span></p></td>";
 echo "<td width=80 align=center><input id='customer_other' name='customer_other' type='text' value=''/>";
 echo "</tr>";
 

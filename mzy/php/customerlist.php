@@ -3,7 +3,7 @@
 	header("Content-Type:text/html;   charset=utf-8"); 
 	$sql="select * from mzy_customer";
 	$result=mysql_query($sql);
-	echo "<table width=330 border=1 cellspacing=1> "; 
+	echo "<table width=340 border=1 cellspacing=1> "; 
 	echo "<th width=50 scope=col align=center>姓名</th> ";
 	echo "<th width=50 scope=col align=center>用户电话</th> ";
 	echo "<th width=50 scope=col align=center>开户时间</th> ";
